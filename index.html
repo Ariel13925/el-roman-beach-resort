@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Roman Beach Resort</title>
+    <style>
+        /* CSS to apply the background to the entire page */
+        body {
+            background-image: url('images/backgroud.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* CSS to apply the background to the hero section */
+        #home {
+            background-image: url('path/to/your-hero-image.jpg');
+            background-size: cover;
+            background-position: center center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Hero content style */
+        .hero-content {
+            color: rgb(0, 132, 255);
+            font-size: 2em;
+        }
+        
+        .book-now-btn {
+            padding: 15px 30px;
+            background-color: #ff7f50;
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* Booking Form Styling */
+        .booking {
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 2rem auto;
+            max-width: 600px;
+            border-radius: 8px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="date"] {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section (Main Image and Book Now Button) -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to El Roman Beach Resort</h1>
+            <p>Your perfect tropical getaway awaits!</p>
+            <a href="#booking" class="book-now-btn">Book Now</a>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="rooms">
+        <h2>Our Rooms</h2>
+        <div class="room">
+            <img src="room1.jpg" alt="Room 1">
+            <h3>Oceanfront Suite</h3>
+            <p>Enjoy stunning views of the ocean from your private balcony.</p>
+        </div>
+        <div class="room">
+            <img src="room2.jpg" alt="Room 2">
+            <h3>Garden View Room</h3>
+            <p>Relax in this cozy room with beautiful garden views.</p>
+        </div>
+        <div class="room">
+            <img src="room3.jpg" alt="Room 3">
+            <h3>Luxury Penthouse</h3>
+            <p>Indulge in our most luxurious room with exclusive amenities.</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <h2>Resort Gallery</h2>
+        <div class="gallery-images">
+            <img src="beach.jpg" alt="Beach View">
+            <img src="pool.jpg" alt="Resort Pool">
+            <img src="sunset.jpg" alt="Sunset View">
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <h2>Book Your Stay</h2>
+        <form action="booking.php" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <!-- Updated Check-in and Check-out Date Inputs -->
+            <label for="checkin">Check-in Date</label>
+            <input type="date" id="checkin" name="checkin" required>
+            
+            <label for="checkout">Check-out Date</label>
+            <input type="date" id="checkout" name="checkout" required>
+            
+            <button type="submit" class="book-now-btn">Reserve Your Room</button>
+        </form>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>For any inquiries, feel free to reach out to us:</p>
+        <p>Email: contact@elromanbeachresort.com</p>
+        <p>Phone: +123 456 789</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 El Roman Beach Resort. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
